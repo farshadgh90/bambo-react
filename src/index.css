@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@font-face {
+  font-family: W1;
+  font-style: normal;
+  src: url("./assets/font/WYekan/W_yekan_mypsdshop.ir.ttf") format("truetype");
+}
+
+@layer base {
+  html {
+    font-family: Lalezar, sans-serif;
+  }
+  .container-max {
+    max-width: 1836px;
+    margin: 0 auto;
+  }
+}
+
+/* here we are building custom classes for our button components. see the link below */
+/* https://tailwindcss.com/docs/functions-and-directives */
+@layer components {
+  .primary-btn {
+    @apply bg-primary-btn py-2 px-5 text-white hover:opacity-80;
+  }
+  .secondary-btn {
+    @apply bg-transparent py-2 px-5 text-[#004458];
+  }
+  .white-btn {
+    @apply bg-white py-2 px-5 text-primary-btn;
+  }
+  .input-form {
+    @apply mt-1
+                    px-4 py-3
+                    block
+                    w-full
+                    rounded-md
+                    bg-gray-100
+                    placeholder-primary-btn
+                    border-transparent
+                    border-b-2
+                    outline-0
+                    focus:border-b-primary-btn focus:border-b-2;
+  }
+
+  .coursesBtn {
+    @apply font-body text-[28px] p-1;
+  }
+  .courseTitle {
+    @apply text-4xl	text-primary-btn text-[35px] leading-[47px] my-5 font-body;
+  }
+  .courseDetail {
+    @apply text-2xl text-[#3E7788] text-[28px] leading-[37px] my-5 font-body;
+  }
+  .coursePrice {
+    @apply text-2xl	text-[#09B28B]	text-[30px] leading-[40px]  my-6 font-body;
+  }
+}

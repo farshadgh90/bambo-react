@@ -1,0 +1,10 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.breakerPairColorization.enabled":true,
+    "editor.formatOnSave":true,
+    "editor.formatOnPaste":true,
+    "editor.wordWrap":"on",
+    "files.associations":{
+        "*.css":"tailwindcss"
+    }
+}
